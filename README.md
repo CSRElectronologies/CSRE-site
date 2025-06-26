@@ -1,5 +1,5 @@
-<!-- # Hugo CSR Electronologies
-
+ # CSR Electronologies
+<!--
 ![Screenshot](https://github.com/writeonlycode/hugo-up-business/blob/main/images/screenshot.png?raw=true)
 
 **Hugo CSR Electronologies** is a clean and modern landing page built with [Hugo](https://gohugo.io/), designed to highlight businesses, products, or services with clarity and style. Inspired by light illustrations and a modern aesthetic, it offers a minimal yet professional interface for company websites or promotional pages.
