@@ -1,4 +1,4 @@
-# Hugo CSR Electronologies
+<!-- # Hugo CSR Electronologies
 
 ![Screenshot](https://github.com/writeonlycode/hugo-up-business/blob/main/images/screenshot.png?raw=true)
 
@@ -65,4 +65,4 @@ This will generate the `public/` directory, which contains the complete static s
 
 ## License
 
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details. -->
