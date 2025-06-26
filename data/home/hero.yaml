@@ -1,0 +1,13 @@
+enable: true
+
+title: "**Level up** your Electronics"
+text: "From concept to production, we design, develop, and deliver custom Embedded solutions with precision and speed."
+
+buttons:
+  - label: "How we work"
+    link: "#"
+
+  - label: "Let's talk"
+    link: ""
+
+image: "images/hero-image.png"

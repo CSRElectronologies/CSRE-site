@@ -1,0 +1,28 @@
+title: "CSR Electronologies"
+description: "We specialize in transforming embedded ideas into real-world products — from prototype to production."
+images: 
+  - "images/hero-image.png"
+
+logo: "arrow-up.png"
+
+favicons:
+  themeColor: "#FFFFFF"
+  backgroundColor: "#FFFFFF"
+  faviconColor: "#000000"
+
+social:
+  dribbble: "#"
+  instagram: "#"
+  facebook: "#"
+  twitter: "#"
+
+location:
+  - "#5-11-971, Pochammakunta, Hanamkonda, Telangana 506001"
+
+contact:
+  - "info@csre.in"
+  - "csrelectronologies@gmail.com"
+  - "9494852668"
+
+copyright: "© 2025 CSR Electronologies All Rights Reserved"
+

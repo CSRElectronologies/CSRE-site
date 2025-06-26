@@ -1,0 +1,7 @@
+enable: true
+
+title: "Start building your idea now!"
+image: "images/5035199.jpg"
+button:
+  label: "Let's talk"
+  link: "/book-a-call"

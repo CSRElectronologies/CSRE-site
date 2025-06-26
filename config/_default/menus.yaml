@@ -1,0 +1,41 @@
+main:
+  - name: "Home"
+    url: "/#hero"
+    weight: 1
+
+  - name: "How we work"
+    url: "/#"
+    weight: 2
+
+  - name: "Our portfolio"
+    url: "/#"
+    weight: 3
+
+ 
+
+  - name: "Blog"
+    url: "/blog"
+    weight: 4
+
+buttons:
+  - name: "Book a call"
+    url: "/book-a-call"
+    weight: 5
+
+footer:
+  - name: "Home"
+    url: "/#hero"
+    weight: 1
+
+  - name: "How we work"
+    url: "/#"
+    weight: 2
+
+  - name: "Our portfolio"
+    url: "/#"
+    weight: 3
+
+
+  - name: "Blog"
+    url: "/blog"
+    weight: 4
