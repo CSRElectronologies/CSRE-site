@@ -7,7 +7,10 @@ buttons:
   - label: "How we work"
     link: "#"
 
+  - label: "Tech Journal"
+    link: "/blog/"
+
   - label: "Let's talk"
-    link: ""
+    link: "/book-a-call/"
 
 image: "images/hero-image.png"
