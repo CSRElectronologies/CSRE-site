@@ -1,6 +1,6 @@
 main:
   - name: "Home"
-    url: "/#hero"
+    url: "/#"
     weight: 1
 
   - name: "How we work"
