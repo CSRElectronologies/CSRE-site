@@ -11,10 +11,10 @@ favicons:
   faviconColor: "#000000"
 
 social:
-  dribbble: "#"
-  instagram: "#"
-  facebook: "#"
-  twitter: "#"
+  dribbble: "/"
+  instagram: "/book-a-call"
+  facebook: "/book-a-call"
+  twitter: "/book-a-call"
 
 location:
   - "#5-11-971, Pochammakunta, Hanamkonda, Telangana 506001"
