@@ -10,8 +10,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        '3am': ['ThreeAM', 'sans-serif'],
-      },
-    },
-  },
+        'inter': ['Inter', 'system-ui', 'sans-serif'],
+        'library-3am': ['Library 3 AM', 'sans-serif'], // Add this line
+      }
+    }
+  }
 }

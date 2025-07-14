@@ -138,9 +138,9 @@
 }
 
 @font-face {
-  font-family: 'ThreeAM';
-  src: url('/fonts/3AM.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Library 3 AM';
+    src: url('../../fonts/Library_3_am.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }

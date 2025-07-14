@@ -1,14 +1,14 @@
 enable: true
 
 items:
-  - image: "images/portfolio-ecommerce.png"
+  - image: "images/smart-home.png"
     pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+    title: "We developed an Home Automation System"
+    text: "We have successfully developed and deployed a production-grade Home Automation System that enables users to control and automate home appliances through a mobile app and Alexa voice commands. The system integrates seamlessly with smart devices and provides a user-friendly interface for real-time monitoring, scheduling, and energy-efficient automation"
 
     buttons: 
       - label: "See live"
-        link: "#"
+        link: "https://patiot.in/static/media/video4.a0334e68bef32acce990.mp4"
 
       - label: "Read more"
         link: "#"
