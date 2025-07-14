@@ -1,7 +1,7 @@
 enable: true
 
 items:
-  - image: "images/smart-home.png"
+  - image: "images/Smart-home.png"
     pretitle: "Portfolio Service"
     title: "We developed an Home Automation System"
     text: "We have successfully developed and deployed a production-grade Home Automation System that enables users to control and automate home appliances through a mobile app and Alexa voice commands. The system integrates seamlessly with smart devices and provides a user-friendly interface for real-time monitoring, scheduling, and energy-efficient automation"
