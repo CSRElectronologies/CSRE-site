@@ -1,25 +1,25 @@
 enable: true
 
 title: "Our main services"
-text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+text: "We turn ideas into smart embedded products. From concept to production, we offer complete solutions including prototyping, custom hardware, firmware development, and manufacturing—tailored to meet your specific needs."
 cards:
-  - image: "images/services-web-development.png"
-    title: "Web development"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+  - image: "images/circuit-board.png"
+    title: "Embedded Product Development"
+    text: "We design and develop complete embedded systems—from concept and prototyping to production-ready hardware, tailored to your application."
     button:
       label: "Learn more"
       link: "#"
 
-  - image: "images/services-web-development.png"
-    title: "Web development"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+  - image: "images/firmware.png"
+    title: "Firmware & Integration"
+    text: "Our team builds efficient firmware for microcontrollers and peripherals, ensuring smooth hardware-software integration for reliable performance."
     button:
       label: "Learn more"
       link: "#"
 
-  - image: "images/services-web-development.png"
-    title: "Web development"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+  - image: "images/pcb-design.png"
+    title: "PCB Design & Manufacturing"
+    text: "We provide custom PCB design and manufacturing services, delivering high-quality boards optimized for both prototyping and large-scale production."
     button:
       label: "Learn more"
       link: "#"
