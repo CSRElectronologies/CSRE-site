@@ -8,17 +8,18 @@ featured:
   client: "CEO - PAT IoT Solutions"
 
 items:
-  - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-    client: "Anonymous Customer"
+  - text: "CSR Electronologies transformed our idea into a fully functional SpO₂ and Heart Rate Monitor device with BLE connectivity. The accuracy, reliability, and speed of delivery were outstanding. Their technical expertise in medical-grade hardware and firmware made the product launch seamless."
+    client: "An Medical Device OEM"
 
-  - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-    client: "Anonymous Customer"
+  - text: "CSR Electronologies delivered a state-of-the-art Electronics Lab setup with modern all-in-one test benches and complete soldering/desoldering workstations. The lab has significantly improved students’ hands-on skills in circuit design, prototyping, and testing."
+    client: "KITS Warangal"
 
-  - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-    client: "Anonymous Customer"
+  - text: "CSR Electronologies engineered a highly efficient automatic electrolyte temperature monitoring and water-cooled charging system for our lead-acid battery production line. The setup manages 72 tubs in parallel and has drastically improved charging efficiency while eliminating QC issues at the end of production."
+    # client: "Manager(IoT) "
+    client: "Amara Raja Batteries Ltd"
 
-  - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-    client: "Anonymous Customer"
+  # - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
+  #   client: "Anonymous Customer"
 
-  - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-    client: "Anonymous Customer"
+  # - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
+  #   client: "Anonymous Customer"  
