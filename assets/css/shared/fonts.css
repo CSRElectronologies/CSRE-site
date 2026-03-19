@@ -139,7 +139,8 @@
 
 @font-face {
     font-family: 'Library 3 AM';
-    src: url('../../fonts/Library_3_am.otf') format('opentype');
+    /* Put the font file at `static/fonts/Library_3_am.otf` so this URL works everywhere */
+    src: url('/fonts/Library_3_am.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

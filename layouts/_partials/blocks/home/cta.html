@@ -5,7 +5,7 @@
     {{ end }}
     {{ with .image }}
       <div class="mb-8 flex items-center justify-center">
-        {{ partial "utilities/image.html" (dict "src" . ) }}
+        {{ partial "utilities/image.html" (dict "src" . "class" "h-auto w-full max-w-md xl:max-w-2xl object-contain") }}
       </div>
     {{ end }}
     {{ with .button }}
