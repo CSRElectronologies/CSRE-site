@@ -95,7 +95,7 @@ Compliance should not be viewed as a hurdle to be cleared at the end of a projec
 
 ### Partner with Experts in Compliant Design
 
-At **[Company Name]**, we specialize in helping startups and enterprises bridge the gap from prototype to market-ready product.
+At **CSR Electronologies**, we specialize in helping startups and enterprises bridge the gap from prototype to market-ready product.
 
 **Our Expertise Includes:**
 * Full-stack Electronics Design with DFM/Compliance focus.
