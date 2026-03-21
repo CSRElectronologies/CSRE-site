@@ -103,7 +103,7 @@ At **[Company Name]**, we specialize in helping startups and enterprises bridge 
 * Automotive (AIS) and Medical (ISO 13485) hardware engineering.
 * WPC/Wireless optimization and antenna tuning.
 
-**Ready to build electronics that pass on the first attempt?** [Contact our Engineering Team](mailto:engineering@yourcompany.com)
+**Ready to build electronics that pass on the first attempt?** [Book a call with our engineering team](/book-a-call/)
 
 ---
 *Next in the Series: Deep Dive into EMI/EMC Design Strategies for High-Speed PCBs*
