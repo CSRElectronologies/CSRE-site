@@ -41,6 +41,8 @@ hugo server
 
 Your site will be running at `http://localhost:1313`. Any changes you make will be hot-reloaded in the browser.
 
+**URLs and images on localhost:** `hugo server` uses the `development` environment. `config/development/hugo.yaml` sets `baseURL` to `http://localhost:1313/` so links and resized images (e.g. compliance) load from your machine—not `https://csre.in/`. If you run plain `hugo` and open `public/` with another static server, the build uses production `baseURL` from `config/_default/hugo.yaml` instead.
+
 ### Editing Content
 
 * All content is stored in the `content/` and `data/` directories.

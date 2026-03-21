@@ -6,6 +6,11 @@ description = "Guide to emoji usage in Hugo"
 tags = [
     "emoji",
 ]
+
+# Keep sample content in repo but hide from site (not listed, no public page)
+[_build]
+list = "never"
+render = "never"
 +++
 
 Emoji can be enabled in a Hugo project in a number of ways. 

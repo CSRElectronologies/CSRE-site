@@ -14,6 +14,11 @@ categories = [
 ]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
+
+# Keep sample content in repo but hide from site (not listed, no public page)
+[_build]
+list = "never"
+render = "never"
 +++
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

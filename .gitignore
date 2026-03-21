@@ -1,5 +1,6 @@
 # Hugo output
 public/
+devtest/
 resources/_gen/
 
 # Hugo caches

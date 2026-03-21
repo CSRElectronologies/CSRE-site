@@ -7,6 +7,13 @@
       {{ with .Params.description }}
         <p class="mx-auto mb-16 text-center xl:max-w-[50%]">{{ . }}</p>
       {{ end }}
+      {{ with .Params.image }}
+        <div class="mb-10 mx-auto w-full max-w-4xl overflow-hidden rounded-lg">
+          <div class="aspect-video">
+            {{ partial "utilities/image" (dict "src" . "class" "h-full w-full object-cover") }}
+          </div>
+        </div>
+      {{ end }}
       {{ with .Content }}
         <div class="prose prose-lg mx-auto">
           {{ . }}

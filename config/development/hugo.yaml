@@ -1,0 +1,4 @@
+# Used automatically when you run `hugo server` (development environment).
+# Keeps links, CSS, and processed images (e.g. compliance.jpg) on localhost
+# instead of https://csre.in/
+baseURL: "http://localhost:1313/"

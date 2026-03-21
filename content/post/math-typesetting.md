@@ -4,6 +4,10 @@ title: Math Typesetting
 date: 2019-03-08
 description: A brief guide to setup KaTeX
 math: true
+# Keep sample content in repo but hide from site (not listed, no public page)
+_build:
+  list: never
+  render: never
 ---
 
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
