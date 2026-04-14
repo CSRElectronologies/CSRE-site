@@ -1,0 +1,31 @@
+# CSR Electronologies (CSRE)
+
+> Embedded electronics engineering from prototype to production — **CSRE**, **CSR Electronologies**, **https://csre.in/**
+
+CSR Electronologies builds **embedded systems** and **electronics products**: portfolio, services, **Tech journal** (blog), India **electronics compliance** (BIS, WPC, EMI/EMC), and **Book a call** for consultations.
+
+**Location:** Hanamkonda, Telangana, India. **Site language:** English.
+
+## Essential pages
+
+- [Home](https://csre.in/): Hero, partner brands, portfolio, services, testimonials, and primary call-to-action.
+- [Tech journal (posts)](https://csre.in/post/): Articles and guides; main editorial section.
+- [Book a call](https://csre.in/book-a-call/): Schedule a consultation (form and contact flow).
+
+## Featured article
+
+- [Electronics standards & compliance in India](https://csre.in/post/electronics-compliance-guide/): Practical guide to BIS, WPC, EMI/EMC, design practices, and certification-oriented engineering.
+
+## Discovery
+
+- [XML sitemap](https://csre.in/sitemap.xml): Machine-readable list of public URLs on this site.
+
+## Optional / secondary
+
+- [Blog alias URL](https://csre.in/blog/): Same journal as `/post/` (Hugo aliases include `blog`).
+- [Book a call (menu path)](https://csre.in/book-a-call): Alternate path without trailing slash (may redirect to canonical).
+
+## Contact (humans)
+
+- Email: info@csre.in, csrelectronologies@gmail.com
+- Phone: +91 9494852668

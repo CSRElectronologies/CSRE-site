@@ -1,5 +1,7 @@
 title: "CSR Electronologies"
 description: "We specialize in transforming embedded ideas into real-world products — from prototype to production."
+# Optional; rendered as <meta name="keywords"> (some engines still read it). Primary brand keyword: CSRE.
+keywords: "CSRE, CSR Electronologies, embedded systems, electronics design, firmware, hardware, India, Hanamkonda"
 images: 
   - "images/hero-image.png"
 

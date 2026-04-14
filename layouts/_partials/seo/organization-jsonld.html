@@ -1,0 +1,24 @@
+{{- /* Organization + alternateName "CSRE" for search engines (Google rich results / knowledge panel signals). */ -}}
+{{- $desc := site.Params.description -}}
+{{- $base := strings.TrimSuffix "/" site.BaseURL -}}
+{{- $url := printf "%s/" $base -}}
+{{- $logo := "" -}}
+{{- with site.Params.images -}}
+  {{- with index . 0 -}}
+    {{- with resources.Get . -}}
+      {{- $logo = .Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $org := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "name" site.Title
+  "alternateName" (slice "CSRE")
+  "url" $url
+  "description" $desc
+-}}
+{{- with $logo -}}
+  {{- $org = merge $org (dict "logo" .) -}}
+{{- end -}}
+<script type="application/ld+json">{{ $org | jsonify }}</script>
