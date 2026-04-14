@@ -77,6 +77,16 @@ jobs:
       - name: Configure Git
         run: git config core.quotepath false
 
+      # IndexNow: key file must exist on the live host at https://<host>/<key>.txt
+      # Secrets: INDEXNOW_KEY (required). Optional: INDEXNOW_HOST (e.g. csre.in) — or repo variable INDEXNOW_HOST.
+      - name: Write IndexNow key file
+        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          set -euo pipefail
+          printf '%s' "$INDEXNOW_KEY" > "static/${INDEXNOW_KEY}.txt"
+
       # Build Hugo site
       - name: Build with Hugo
         run: |
@@ -85,6 +95,58 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
+
+      # Notify search engines (Bing, etc.) after a successful build
+      - name: IndexNow submit (from sitemap)
+        if: ${{ secrets.INDEXNOW_KEY != '' }}
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          INDEXNOW_HOST: ${{ secrets.INDEXNOW_HOST || vars.INDEXNOW_HOST }}
+        run: |
+          set -euo pipefail
+          python3 <<'PY'
+          import json
+          import os
+          import re
+          import urllib.error
+          import urllib.request
+          from urllib.parse import urlparse
+
+          key = os.environ["INDEXNOW_KEY"]
+          host = (os.environ.get("INDEXNOW_HOST") or "csre.in").strip().lower() or "csre.in"
+          scheme_host = f"https://{host}"
+
+          xml = open("public/sitemap.xml", encoding="utf-8").read()
+          raw = re.findall(r"<loc>([^<]+)</loc>", xml)
+          urls = []
+          for u in raw:
+              p = urlparse(u.strip())
+              path = p.path or "/"
+              q = f"?{p.query}" if p.query else ""
+              urls.append(f"{scheme_host}{path}{q}")
+
+          payload = {
+              "host": host,
+              "key": key,
+              "keyLocation": f"{scheme_host}/{key}.txt",
+              "urlList": urls,
+          }
+          body = json.dumps(payload).encode("utf-8")
+          req = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=body,
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=60) as resp:
+                  print("IndexNow HTTP", resp.status)
+          except urllib.error.HTTPError as e:
+              print("IndexNow HTTP error:", e.code, e.read().decode("utf-8", errors="replace"))
+              raise
+
+          print("Submitted", len(urls), "URLs to IndexNow for host", host)
+          PY
 
       # Save cache
       - name: Cache Save
