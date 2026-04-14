@@ -78,13 +78,17 @@ jobs:
         run: git config core.quotepath false
 
       # IndexNow: key file must exist on the live host at https://<host>/<key>.txt
-      # Secrets: INDEXNOW_KEY (required). Optional: INDEXNOW_HOST (e.g. csre.in) — or repo variable INDEXNOW_HOST.
+      # Set secret INDEXNOW_KEY to enable. Optional host: variable INDEXNOW_HOST and/or secret INDEXNOW_HOST.
+      # Note: GitHub does not allow `secrets` in step `if:`, so we skip inside the script when unset.
       - name: Write IndexNow key file
-        if: ${{ secrets.INDEXNOW_KEY != '' }}
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: |
           set -euo pipefail
+          if [ -z "${INDEXNOW_KEY:-}" ]; then
+            echo "INDEXNOW_KEY not set — skipping IndexNow key file"
+            exit 0
+          fi
           printf '%s' "$INDEXNOW_KEY" > "static/${INDEXNOW_KEY}.txt"
 
       # Build Hugo site
@@ -98,12 +102,17 @@ jobs:
 
       # Notify search engines (Bing, etc.) after a successful build
       - name: IndexNow submit (from sitemap)
-        if: ${{ secrets.INDEXNOW_KEY != '' }}
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
-          INDEXNOW_HOST: ${{ secrets.INDEXNOW_HOST || vars.INDEXNOW_HOST }}
+          INDEXNOW_HOST_SECRET: ${{ secrets.INDEXNOW_HOST }}
+          INDEXNOW_HOST_VAR: ${{ vars.INDEXNOW_HOST }}
         run: |
           set -euo pipefail
+          if [ -z "${INDEXNOW_KEY:-}" ]; then
+            echo "INDEXNOW_KEY not set — skipping IndexNow submit"
+            exit 0
+          fi
+          export INDEXNOW_HOST="${INDEXNOW_HOST_SECRET:-${INDEXNOW_HOST_VAR}}"
           python3 <<'PY'
           import json
           import os
